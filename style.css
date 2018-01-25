@@ -1,0 +1,69 @@
+/*
+Theme Name: Uni - Child 2017
+Theme URI: http://impacting.digital
+Description: UNI is a Twenty Fifteen Child Theme made by Impacting Digital 
+Author: Impacting Digital - David Pereira
+Author URI: http://impacting.digital
+Template: twentyseventeen
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready, Primavera Academy, Primavera, Academy, Skills
+Text Domain: id-twenty-seventeen-child
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+    box-sizing: border-box;
+}
+html, body, button, input, select, textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+@media screen and (min-width: 48em){
+    body p{
+        line-height: 1.8em;
+    }
+}
+
+h1,h2,h3,h4{
+    font-family: 'Oswald', sans-serif;
+    color: inherit;
+}
+
+h2 + h3{
+    margin-top:-1em;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .hide-mobile{display:none!important;}
+}
+
+
+
+
+.twentyseventeen-front-page.has-header-image .custom-header-media,
+.twentyseventeen-front-page.has-header-video .custom-header-media,
+.home.blog.has-header-image .custom-header-media,
+.home.blog.has-header-video .custom-header-media,
+.has-header-image.twentyseventeen-front-page .custom-header,
+.has-header-video.twentyseventeen-front-page .custom-header,
+.has-header-image.home.blog .custom-header,
+.has-header-video.home.blog .custom-header {
+  height: 100vh;    
+  height: 100%; 
+  max-height: 500px;
+}
