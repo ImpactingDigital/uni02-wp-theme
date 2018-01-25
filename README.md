@@ -1,2 +1,2 @@
 # uni02-wp-theme
-Theme for the Universities wordpress landing pages
+Twenty Seventeeen Theme for the Universities wordpress landing pages
