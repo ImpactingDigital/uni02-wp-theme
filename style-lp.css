@@ -364,6 +364,16 @@ h1.logo-universities{
 /*------------------------
          FORM
 ------------------------*/
+.chatform{
+    position:relative;
+    z-index: 5;
+    margin:0 5% 40px auto;
+    min-width:280px;
+    width:90%;
+    max-width: 420px;
+    height:auto;
+    padding:0;
+}
 .stepform{
     position:relative;
     z-index: 5;
@@ -384,6 +394,13 @@ h1.logo-universities{
     color:#fff;
 }
     
+.stepform iframe, .chatform iframe{
+    border:0;
+    margin:0;
+    width:100%;
+    min-height:400px;
+    padding-bottom:0;
+}
 /*------------------------
         BUTTONS
 ------------------------*/
