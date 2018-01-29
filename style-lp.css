@@ -684,7 +684,7 @@ footer p{
     position:fixed;
     padding:20px;
     right:5%;
-    bottom:5px;
+    bottom:16px;
     width:90%;
     height:100px;
     cursor:pointer;
@@ -694,7 +694,7 @@ footer p{
 @media screen and (min-width:40em){
     .cta-chat-smk{
         width:200px;
-        right:5px
+        right:10px
     }
 }
 /* EDITAR CORES NAS LINHAS ABAIXO */
@@ -737,7 +737,7 @@ footer p{
 .cta-chat-smk .avatar {
     position:absolute;
     left:0;
-    bottom:0;
+    bottom:8px;
     background-color: black;
     border-radius: 50px;
     height: 58px;
