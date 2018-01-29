@@ -70,25 +70,38 @@ h1.logo-universities{
 
 .intro.block{
     background-image: url(assets/images/bg-coimbra-cidade-rio-vertical.jpg);
+    background-color:#005f31;
     background-size: cover;
     background-position: bottom center;
     z-index: 6;
     padding:170px 0 100px;
+    min-height: 640px;
+    position: relative;
+}
+.portugal-slider{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
     transition: background-image .2s ease;
     animation: intro-bg 40s infinite ease-out;
-    min-height: 640px;
-}
+    background-size: cover;
+    background-position: center;
 
+}
 @keyframes intro-bg {
-    0%   {background-image: url(assets/images/bg-coimbra-cidade-rio-vertical.jpg);}
-    22%   {background-image: url(assets/images/bg-coimbra-cidade-rio-vertical.jpg);}
-    25%  {background-image: url(assets/images/bg-porto-sm.jpg);}
-    47%  {background-image: url(assets/images/bg-porto-sm.jpg);}
-    50%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
-    72%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
-    75%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
-    97%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
-    100%   {background-image: url(assets/images/bg-coimbra-cidade-rio-vertical.jpg);}
+    0%   {background-image: url(assets/images/bg-porto-sm.jpg);}
+    18%   {background-image: url(assets/images/bg-porto-sm.jpg);}
+    20%  {background-image: url(assets/images/bg-madeira-sm.jpg);}
+    38%  {background-image: url(assets/images/bg-madeira-sm.jpg);}
+    40%  {background-image: url(assets/images/bg-guimaraes-sm.jpg);}
+    58%  {background-image: url(assets/images/bg-guimaraes-sm.jpg);}
+    60%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
+    78%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
+    80%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
+    98%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
+    100%   {background-image: url(assets/images/bg-porto-sm.jpg);}
 }
 /*load the images before the animation do avoid the blink issue*/
 .intro.block:after{
@@ -99,10 +112,12 @@ h1.logo-universities{
     animation:image-loader .1s;
 }
 @keyframes image-loader{
-    0%{background-image: url(assets/images/bg-coimbra-cidade-rio-vertical.jpg);}
+    0%{background-image: url(assets/images/bg-madeira-sm.jpg);}
     2%  {background-image: url(assets/images/bg-porto-sm.jpg);}
     3%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
     4%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
+    5%  {background-image: url(assets/images/bg-guimaraes-sm.jpg);}
+
 }
 
 .title.block{
@@ -315,20 +330,23 @@ h1.logo-universities{
     }
     @keyframes intro-bg {
         0%   {background-image: url(assets/images/bg-porto.jpg);}
-        24%   {background-image: url(assets/images/bg-porto.jpg);}
-        25%  {background-image: url(assets/images/bg-coimbra-cidade-rio-large.jpg);}
-        49%  {background-image: url(assets/images/bg-coimbra-cidade-rio-large.jpg);}
-        50%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
-        74%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
-        75%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
-        99%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
+        18%   {background-image: url(assets/images/bg-porto.jpg);}
+        20%  {background-image: url(assets/images/bg-madeira.jpg);}
+        38%  {background-image: url(assets/images/bg-madeira.jpg);}
+        40%  {background-image: url(assets/images/bg-guimaraes.jpg);}
+        58%  {background-image: url(assets/images/bg-guimaraes.jpg);}
+        60%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
+        78%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
+        80%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
+        98%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
         100%   {background-image: url(assets/images/bg-porto.jpg);}
     }
     @keyframes image-loader{
     0%{background-image: url(assets/images/bg-porto.jpg);}
-    2%  {background-image: url(assets/images/bg-coimbra-cidade-rio-large.jpg);}
+    2%  {background-image: url(assets/images/bg-madeira.jpg);}
     3%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
     4%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
+    5%  {background-image: url(assets/images/bg-guimaraes.jpg);}
 }
     .portugal-lifestyle.block{
         background-image:url(assets/images/bg-sea.jpg);
@@ -525,11 +543,15 @@ h1.logo-universities{
     background-position: center;
 }
 .uni-logo{
+    display:block;
     width:100%;
     height:100px;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+}
+a.uni-logo, a.uni-logo:hover{
+    box-shadow:none;
 }
 .uni-item.coimbra .uni-image{
     background-image: url(assets/images/universities/universidade_de_coimbra460342957univ._coimbra.jpg)
@@ -635,7 +657,7 @@ h1.logo-universities{
         FOOTER
 ------------------------*/
 footer{
-    padding:40px 0;
+    padding:140px 0;
     vertical-align: middle;
     text-align: center;
 }
@@ -654,7 +676,7 @@ footer p{
 @media only screen and (min-width: 48em) {
     footer{
         display: flex;
-        padding:40px;
+        padding:140px 40px;
         justify-content: space-between
     }
     footer .info-footer{
@@ -801,6 +823,9 @@ footer p{
 @media only screen and (min-width: 48em) {    
     .cta-chat-smk .message{
         font-size: 18px;
+    }
+    .cta-chat-smk{
+    z-index: 10;
     }
 }
 
