@@ -2,7 +2,6 @@
 Theme Name: Uni - Child 2017
 Description: Specific style for the Universities Portugal landing pages
 */
-
 /*------------------------
         HEADER
 ------------------------*/
@@ -24,12 +23,10 @@ Description: Specific style for the Universities Portugal landing pages
     height:300px;
     transform:rotate(-35deg);
     z-index: 3;
-    
     background: -moz-linear-gradient(45deg, rgba(198,63,0,0.8) 0%, rgba(23,145,10,0.8) 100%);
     background: -webkit-linear-gradient(45deg, rgba(198,63,0,0.8) 0%,rgba(23,145,10,0.8) 100%);
     background: linear-gradient(45deg, rgba(198,63,0,0.8) 0%,rgba(23,145,10,0.8) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc63f00', endColorstr='#cc17910a',GradientType=1 );
-    
 }
 .logo-universities-portugal{
     width:160px;
@@ -47,7 +44,6 @@ h1.logo-universities{
     background-image: url(assets/images/logo_universities_portugal-w.png);
     background-repeat: no-repeat;
     background-size: contain;
-    
     text-indent: -9999px;
 }
 @media only screen and (min-width: 48em) {
@@ -58,7 +54,6 @@ h1.logo-universities{
         height:400px;
     }
 }
-
 /*------------------------
         CONTENT BLOCKS
 ------------------------*/
@@ -67,9 +62,7 @@ h1.logo-universities{
     height:auto;
     position:relative;
 }
-
 .intro.block{
-    background-image: url(assets/images/bg-coimbra-cidade-rio-vertical.jpg);
     background-color:#005f31;
     background-size: cover;
     background-position: bottom center;
@@ -88,7 +81,6 @@ h1.logo-universities{
     animation: intro-bg 40s infinite ease-out;
     background-size: cover;
     background-position: center;
-
 }
 @keyframes intro-bg {
     0%   {background-image: url(assets/images/bg-porto-sm.jpg);}
@@ -104,22 +96,13 @@ h1.logo-universities{
     100%   {background-image: url(assets/images/bg-porto-sm.jpg);}
 }
 /*load the images before the animation do avoid the blink issue*/
-.intro.block:after{
-    display:block;
-    width:1px;
-    height:1px;
-    content:" ";
-    animation:image-loader .1s;
-}
-@keyframes image-loader{
-    0%{background-image: url(assets/images/bg-madeira-sm.jpg);}
-    2%  {background-image: url(assets/images/bg-porto-sm.jpg);}
-    3%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
-    4%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
-    5%  {background-image: url(assets/images/bg-guimaraes-sm.jpg);}
-
-}
-
+.portugal-slider-loader{list-style-type: none;display: flex;position:absolute;z-index: -1;top:0;left:0;}
+.portugal-slider-loader l1{width:1px;height:1px;}
+.portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-porto-sm.jpg);}
+.portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-madeira-sm.jpg);}
+.portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
+.portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
+.portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-guimaraes-sm.jpg);}
 .title.block{
     font-size: 3em;
     text-align: center;
@@ -128,7 +111,6 @@ h1.logo-universities{
     text-transform: uppercase;
     margin:0;
 }
-
 .portugal-lifestyle.block{
     background-image:url(assets/images/bg-sea-sm.jpg);
     background-size: cover;
@@ -174,7 +156,6 @@ h1.logo-universities{
     width:100%;
     max-width: 420px;
     padding:40px;
-    
 }
 .topics.block .topic h3{
     padding:0;
@@ -193,7 +174,6 @@ h1.logo-universities{
     min-height: 640px;
     color:#fff;
 }
-
 .universities.block .triangle{
     width: 200%;
     height: 100%;
@@ -262,8 +242,7 @@ h1.logo-universities{
     transform:rotate(135deg) scale(.5);
     top:2%;
     left:20%;
-        animation-delay: 1s;
-
+    animation-delay: 1s;
 }
 .triangles .triangle:nth-child(4){
     transform:rotate(180deg) scale(1);
@@ -320,14 +299,8 @@ h1.logo-universities{
 }
 /* Desktop responsive adjustments */
 @media only screen and (min-width: 48em) {
-    .block{
-        position: relative;
-    }
-    .intro.block{
-        background-image: url(assets/images/bg-coimbra-cidade-rio-large.jpg);
-        background-size: cover;
-        background-color: rgba(177,208,53,0.9);
-    }
+    .block{position: relative;}
+    .intro.block{background-size: cover;}
     @keyframes intro-bg {
         0%   {background-image: url(assets/images/bg-porto.jpg);}
         18%   {background-image: url(assets/images/bg-porto.jpg);}
@@ -341,13 +314,12 @@ h1.logo-universities{
         98%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
         100%   {background-image: url(assets/images/bg-porto.jpg);}
     }
-    @keyframes image-loader{
-    0%{background-image: url(assets/images/bg-porto.jpg);}
-    2%  {background-image: url(assets/images/bg-madeira.jpg);}
-    3%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
-    4%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
-    5%  {background-image: url(assets/images/bg-guimaraes.jpg);}
-}
+    .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-porto.jpg);}
+    .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-madeira.jpg);}
+    .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-trasosmontes1.jpg);}
+    .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
+    .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-guimaraes.jpg);}
+
     .portugal-lifestyle.block{
         background-image:url(assets/images/bg-sea.jpg);
         display:flex;
@@ -368,17 +340,9 @@ h1.logo-universities{
         width:33%;
         max-width: 420px;
     }
-
-    
-    .universities.block{
-        background-image: url(assets/images/students-coimbra-lg.jpg);
-    }
-    .enem.block{
-        background-image: url(assets/images/padrao-dos-descobrimentos-y.jpg)
-    }
+    .universities.block{background-image: url(assets/images/students-coimbra-lg.jpg);}
+    .enem.block{background-image: url(assets/images/padrao-dos-descobrimentos-y.jpg)}
 }
-
-
 /*------------------------
          FORM
 ------------------------*/
@@ -405,13 +369,9 @@ h1.logo-universities{
     background: -webkit-linear-gradient(45deg, rgba(177,208,53,0.9) 0%,rgba(94,186,68,0.9) 100%);
     background: linear-gradient(45deg, rgba(177,208,53,0.9) 0%,rgba(94,186,68,0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b1d035', endColorstr='#e65eba44',GradientType=1 );
-    
     color:#fff;
 }
-.stepform h2{
-    color:#fff;
-}
-    
+.stepform h2{color:#fff;}  
 .stepform iframe, .chatform iframe{
     border:0;
     margin:0;
@@ -426,25 +386,20 @@ h1.logo-universities{
     color:#fff;
     font-family: 'Oswald', sans-serif;
     display:inline-block;
-    
     border-radius:25px;
     font-size: 1.2em;
     text-transform: uppercase;
     padding:10px 15px;
-    
     box-shadow: none!important;
     background: #ef5724;
     background: -moz-linear-gradient(left, #ef5724 0%, #b51f2a 80%);
     background: -webkit-linear-gradient(left, #ef5724 0%,#b51f2a 80%);
     background: linear-gradient(to right, #ef5724 0%,#b51f2a 80%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5724', endColorstr='#b51f2a',GradientType=1 );
-    
     transition: transform .2s ease;
-    cursor:pointer;
-    
+    cursor:pointer;   
     line-height: 1.2em;
 }
-
 .button.large{
     font-size: 2em;
     padding:10px 25px;
@@ -476,26 +431,18 @@ h1.logo-universities{
 .button:active:after, a.button:active:after, .button:focus:after, a.button:focus:after{
     border-left:solid #000 14px!important ;
 }
-
 /*------------------------
     ICONS & ILLUSTRATIONS
 ------------------------*/
 .topic .icon{
     background-repeat: no-repeat;
     background-size: contain;
-    
     width:160px;
     height:160px;
 }
-.icon.cultura{
-    background-image: url(assets/images/icons/icone-cultura.png)
-}
-.icon.gastronomia{
-    background-image: url(assets/images/icons/icone-alimentacao.png)
-}
-.icon.seguranca{
-    background-image: url(assets/images/icons/icone-policia.png)
-}
+.icon.cultura{background-image: url(assets/images/icons/icone-cultura.png)}
+.icon.gastronomia{background-image: url(assets/images/icons/icone-alimentacao.png)}
+.icon.seguranca{background-image: url(assets/images/icons/icone-policia.png)}
 /*------------------------
         UNIVERSITIES
 ------------------------*/
@@ -517,9 +464,7 @@ h1.logo-universities{
     
     animation: list-carousel 120s ease infinite;
 }
-.universities-list:hover{
-    animation-play-state: paused;
-}
+.universities-list:hover{animation-play-state: paused;}
 .uni-item{
     width:200px;
     margin:13px;
@@ -529,7 +474,6 @@ h1.logo-universities{
     background-color:#fff;
     transition: transform .2s ease;
     border:2px solid transparent;
-
 }
 .uni-item:hover{
     transform: scale(1.5);
@@ -551,108 +495,58 @@ h1.logo-universities{
     background-position: center;
 }
 a.uni-logo, a.uni-logo:hover{
-    box-shadow:none;
-}
+    box-shadow:none;}
 .uni-item.coimbra .uni-image{
-    background-image: url(assets/images/universities/universidade_de_coimbra460342957univ._coimbra.jpg)
-}
+    background-image: url(assets/images/universities/universidade_de_coimbra460342957univ._coimbra.jpg)}
 .uni-item.lisboa .uni-image{
-    background-image: url(assets/images/universities/universidade_de_lisboa1353996141reitoria_limpa_completa.jpg)
-}
+    background-image: url(assets/images/universities/universidade_de_lisboa1353996141reitoria_limpa_completa.jpg)}
 .uni-item.porto .uni-image{
-    background-image: url(assets/images/universities/universidade_do_porto1844121722u.porto.jpg)
-}
+    background-image: url(assets/images/universities/universidade_do_porto1844121722u.porto.jpg)}
 .uni-item.nova-de-lisboa .uni-image{
-    background-image: url(assets/images/universities/universidade_nova_de_lisboa1939457830univ._nova.jpg)
-}
+    background-image: url(assets/images/universities/universidade_nova_de_lisboa1939457830univ._nova.jpg)}
 .uni-item.aveiro .uni-image{
-    background-image: url(assets/images/universities/universidade_de_aveiro1983389085univ._aveiro.jpg)
-}
+    background-image: url(assets/images/universities/universidade_de_aveiro1983389085univ._aveiro.jpg)}
 .uni-item.minho .uni-image{
-    background-image: url(assets/images/universities/universidade_do_minho66190189universidadedominho.jpg)
-}
+    background-image: url(assets/images/universities/universidade_do_minho66190189universidadedominho.jpg)}
 .uni-item.evora .uni-image{
-    background-image: url(assets/images/universities/universidade_de_evora266572188univ._vora.jpg)
-}
+    background-image: url(assets/images/universities/universidade_de_evora266572188univ._vora.jpg)}
 .uni-item.acores .uni-image{
-    background-image: url(assets/images/universities/universidade_dos_acores297204830univ._aores.jpg)
-}
+    background-image: url(assets/images/universities/universidade_dos_acores297204830univ._aores.jpg)}
 .uni-item.algarve .uni-image{
-    background-image: url(assets/images/universities/universidade_do_algarve8907687813.jpg)
-}
+    background-image: url(assets/images/universities/universidade_do_algarve8907687813.jpg)}
 .uni-item.utad .uni-image{
-    background-image: url(assets/images/universities/utad406119800unv._utad.jpg)
-}
+    background-image: url(assets/images/universities/utad406119800unv._utad.jpg)}
 .uni-item.beira .uni-image{
-    background-image: url(assets/images/universities/universidade_da_beira_interior1281872603univ.ubi.jpg)
-}
+    background-image: url(assets/images/universities/universidade_da_beira_interior1281872603univ.ubi.jpg)}
 .uni-item.madeira .uni-image{
-    background-image: url(assets/images/universities/universidade_da_madeira1075602697univ._madeira.jpg)
-}
+    background-image: url(assets/images/universities/universidade_da_madeira1075602697univ._madeira.jpg)}
 .uni-item.aberta .uni-image{
-    background-image: url(assets/images/universities/universidade_aberta1135480450palacio.jpg)
-}
+    background-image: url(assets/images/universities/universidade_aberta1135480450palacio.jpg)}
 .uni-item.catolica .uni-image{
-    background-image: url(assets/images/universities/universidade_catolica_portuguesa1992592339univ._catlica.jpg)
-}
+    background-image: url(assets/images/universities/universidade_catolica_portuguesa1992592339univ._catlica.jpg)}
 .uni-item.iul .uni-image{
-    background-image: url(assets/images/universities/iscte_-_instituto_universitario_de_lisboa199854313iscte.jpg)
-}
-
+    background-image: url(assets/images/universities/iscte_-_instituto_universitario_de_lisboa199854313iscte.jpg)}
 /*LOGOS*/
-.uni-item.coimbra .uni-logo{
-    background-image: url(assets/images/universities/universidade_de_coimbra1129757183ucoimbra-lt.png)
-}
-.uni-item.lisboa .uni-logo{
-    background-image: url(assets/images/universities/universidade_de_lisboa1560058829ulisboa.png)
-}
-.uni-item.porto .uni-logo{
-    background-image: url(assets/images/universities/universidade_do_porto1569739917uporto_png.png)
-}
-.uni-item.nova-de-lisboa .uni-logo{
-    background-image: url(assets/images/universities/universidade_nova_de_lisboa554844150unovalisboa.png)
-}
-.uni-item.aveiro .uni-logo{
-    background-image: url(assets/images/universities/universidade_de_aveiro1441806887uaveiro.png)
-}
-.uni-item.minho .uni-logo{
-    background-image: url(assets/images/universities/universidade_do_minho1488742601uminho.png)
-}
-.uni-item.evora .uni-logo{
-    background-image: url(assets/images/universities/universidade_de_evora465573855uevora.png)
-}
-.uni-item.uni-item.acores .uni-logo{
-    background-image: url(assets/images/universities/universidade_dos_acores512409197uacores.png)
-}
-.uni-item.uni-item.algarve .uni-logo{
-    background-image: url(assets/images/universities/universidade_do_algarve423279821ualg.png)
-}
-.uni-item.uni-item.utad .uni-logo{
-    background-image: url(assets/images/universities/utad1852574216utad.png)
-}
-.uni-item.uni-item.beira .uni-logo{
-    background-image: url(assets/images/universities/universidade_da_beira_interior1156182091ubi.png)
-}
-.uni-item.madeira .uni-logo{
-    background-image: url(assets/images/universities/universidade_da_madeira304052932umadeira.png)
-}
-.uni-item.aberta .uni-logo{
-    background-image: url(assets/images/universities/universidade_aberta1162119978uab.png)
-}
-.uni-item.catolica .uni-logo{
-    background-image: url(assets/images/universities/universidade_catolica_portuguesa500560390ucatolica.png)
-}
-.uni-item.iul .uni-logo{
-    background-image: url(assets/images/universities/iscte_-_instituto_universitario_de_lisboa1930298535iscte.png)
-}
-
+.uni-item.coimbra .uni-logo{background-image: url(assets/images/universities/universidade_de_coimbra1129757183ucoimbra-lt.png)}
+.uni-item.lisboa .uni-logo{background-image: url(assets/images/universities/universidade_de_lisboa1560058829ulisboa.png)}
+.uni-item.porto .uni-logo{background-image: url(assets/images/universities/universidade_do_porto1569739917uporto_png.png)}
+.uni-item.nova-de-lisboa .uni-logo{background-image: url(assets/images/universities/universidade_nova_de_lisboa554844150unovalisboa.png)}
+.uni-item.aveiro .uni-logo{background-image: url(assets/images/universities/universidade_de_aveiro1441806887uaveiro.png)}
+.uni-item.minho .uni-logo{background-image: url(assets/images/universities/universidade_do_minho1488742601uminho.png)}
+.uni-item.evora .uni-logo{background-image: url(assets/images/universities/universidade_de_evora465573855uevora.png)}
+.uni-item.uni-item.acores .uni-logo{background-image: url(assets/images/universities/universidade_dos_acores512409197uacores.png)}
+.uni-item.uni-item.algarve .uni-logo{background-image: url(assets/images/universities/universidade_do_algarve423279821ualg.png)}
+.uni-item.uni-item.utad .uni-logo{background-image: url(assets/images/universities/utad1852574216utad.png)}
+.uni-item.uni-item.beira .uni-logo{background-image: url(assets/images/universities/universidade_da_beira_interior1156182091ubi.png)}
+.uni-item.madeira .uni-logo{background-image: url(assets/images/universities/universidade_da_madeira304052932umadeira.png)}
+.uni-item.aberta .uni-logo{background-image: url(assets/images/universities/universidade_aberta1162119978uab.png)}
+.uni-item.catolica .uni-logo{background-image: url(assets/images/universities/universidade_catolica_portuguesa500560390ucatolica.png)}
+.uni-item.iul .uni-logo{background-image: url(assets/images/universities/iscte_-_instituto_universitario_de_lisboa1930298535iscte.png)}
 @keyframes list-carousel{
     0%{transform: translate(20vw,0)}
     50%{transform: translate(calc(-100% + 80vw),0)}
     100%{transform: translate(20vw,0)}
 }
-
-
 /*------------------------
         FOOTER
 ------------------------*/
@@ -689,7 +583,6 @@ footer p{
         float: right
     }
 }
-
 /***************************************************
                    Chat Smarkio
 ***************************************************/
@@ -701,7 +594,6 @@ footer p{
     bottom: 0;
     border: 0;
 }
-
 .cta-chat-smk{
     position:fixed;
     padding:20px;
