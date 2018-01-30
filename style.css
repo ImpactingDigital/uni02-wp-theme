@@ -18,7 +18,7 @@ Text Domain: id-twenty-seventeen-child
     box-sizing: border-box;
 }
 html, body, button, input, select, textarea{
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     font-weight: normal;
 }
 @media screen and (min-width: 48em){
@@ -45,15 +45,9 @@ h3{
     font-size: 2em;
 }
 
-
-
-
 @media screen and (max-width:768px) {
     .hide-mobile{display:none!important;}
 }
-
-
-
 
 .twentyseventeen-front-page.has-header-image .custom-header-media,
 .twentyseventeen-front-page.has-header-video .custom-header-media,
