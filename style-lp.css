@@ -458,7 +458,7 @@ h1.logo-universities{
     padding:0;
     display: flex;
     flex-wrap: nowrap;
-    animation: list-carousel 120s ease infinite;
+    animation: list-carousel 120s linear infinite;
 }
 .universities-list:hover{animation-play-state: paused;}
 .uni-item{
@@ -505,7 +505,7 @@ a.uni-logo, a.uni-logo:hover{box-shadow:none;}
 .uni-item.madeira .uni-image{background-image: url(assets/images/universities/universidade_da_madeira1075602697univ._madeira.jpg)}
 .uni-item.aberta .uni-image{background-image: url(assets/images/universities/universidade_aberta1135480450palacio.jpg)}
 .uni-item.catolica .uni-image{background-image: url(assets/images/universities/universidade_catolica_portuguesa1992592339univ._catlica.jpg)}
-.uni-item.iul .uni-image{+background-image: url(assets/images/universities/iscte_-_instituto_universitario_de_lisboa199854313iscte.jpg)}
+.uni-item.iul .uni-image{background-image: url(assets/images/universities/iscte_-_instituto_universitario_de_lisboa199854313iscte.jpg)}
 /*LOGOS*/
 .uni-item.coimbra .uni-logo{background-image: url(assets/images/universities/universidade_de_coimbra1129757183ucoimbra-lt.png)}
 .uni-item.lisboa .uni-logo{background-image: url(assets/images/universities/universidade_de_lisboa1560058829ulisboa.png)}
