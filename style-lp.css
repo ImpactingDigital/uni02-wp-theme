@@ -164,6 +164,7 @@ h1.logo-universities{
     padding:80px 0 120px;
     text-align: center;
 }
+
 .universities.block{
     background-size: cover;
     overflow: hidden;
@@ -174,17 +175,17 @@ h1.logo-universities{
     min-height: 640px;
     color:#fff;
 }
-.universities.block .triangle{
+.universities.block .triangle,.mercado-trabalho.block .triangle{
     width: 200%;
     height: 100%;
     transform: rotate(-25deg);
     z-index: 1;
     position: absolute;
-    background-color: rgba(70,150,30, 0.8);
+    background-color: rgba(55, 160, 0, 0.8);
     left: -80%;
     bottom: 45%;
 }
-.universities.block .text{
+.universities.block .text,.mercado-trabalho.block .text{
     position:relative;
     z-index: 3;
     color:#fff;
@@ -194,7 +195,17 @@ h1.logo-universities{
     line-height: 1.5em;
     font-weight: normal;
 }
-.enem.block{
+.mercado-trabalho.block{
+    background-size: cover;
+    overflow: hidden;
+    background-image: url(assets/images/bg-citylisbon-sm.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:40px 40px 420px;
+    min-height: 640px;
+    color:#fff;
+}
+.enem.block,.final.block{
     text-align: center;
     background-color:#F5B816;
     background-image: url(assets/images/padrao-dos-descobrimentos-sm.jpg);
@@ -205,12 +216,15 @@ h1.logo-universities{
     padding:200px 10%;
     position:relative;
 }
-.enem.block .text{
+.enem.block .text, .final.block .text{
     position:relative;
     z-index: 2;
     max-width: 500px;
     margin: 0 auto;
     font-size: 1.2em;
+}
+.final.block .text{
+    max-width: 800px;
 }
 .block .triangles{
     width:100%;
@@ -341,7 +355,8 @@ h1.logo-universities{
         max-width: 420px;
     }
     .universities.block{background-image: url(assets/images/students-coimbra-lg.jpg);}
-    .enem.block{background-image: url(assets/images/padrao-dos-descobrimentos-y.jpg)}
+    .enem.block,.final.block{background-image: url(assets/images/padrao-dos-descobrimentos-y.jpg)}
+    .mercado-trabalho.block{background-image: url(assets/images/bg-citylisbon-lg.jpg);}
 }
 /*------------------------
          FORM
