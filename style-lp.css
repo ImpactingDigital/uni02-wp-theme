@@ -126,6 +126,7 @@ h1.logo-universities{
     position: relative;
     margin: 10% auto 2%;
     display: block;
+    box-shadow: 2px 4px 30px rgba(0,0,0,.5);
 }
 .portugal-lifestyle.block .text{
     position:relative;
@@ -342,7 +343,7 @@ h1.logo-universities{
     }
     .portugal-lifestyle.block .video{
         width:640px;
-        height:400px;
+        height:360px;
         margin:5% auto 5% 5%;
     }
     .portugal-lifestyle.block .text{
@@ -359,6 +360,14 @@ h1.logo-universities{
     .universities.block{background-image: url(assets/images/students-coimbra-lg.jpg);}
     .enem.block,.final.block{background-image: url(assets/images/padrao-dos-descobrimentos-y.jpg)}
     .mercado-trabalho.block{background-image: url(assets/images/bg-citylisbon-lg.jpg);}
+}
+
+@media only screen and (min-width: 90em) {
+    .portugal-lifestyle.block .video{
+        width:800px;
+        height:450px;
+        margin:5% auto 5% 5%;
+    }
 }
 /*------------------------
          FORM
