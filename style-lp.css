@@ -82,6 +82,9 @@ h1.logo-universities{
     background-size: cover;
     background-position: center;
 }
+.mestrado .portugal-slider{
+        animation: intro-bg-mestrado 40s infinite ease-out;
+}
 @keyframes intro-bg {
     0%   {background-image: url(assets/images/bg-porto-sm.jpg);}
     18%   {background-image: url(assets/images/bg-porto-sm.jpg);}
@@ -96,13 +99,36 @@ h1.logo-universities{
     100%   {background-image: url(assets/images/bg-porto-sm.jpg);}
 }
 /*load the images before the animation do avoid the blink issue*/
-.portugal-slider-loader{list-style-type: none;display: flex;position:absolute;z-index: -1;top:0;left:0;}
-.portugal-slider-loader l1{width:1px;height:1px;}
-.portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-porto-sm.jpg);}
-.portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-madeira-sm.jpg);}
-.portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
-.portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
-.portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-guimaraes-sm.jpg);}
+.licenciatura .portugal-slider-loader{list-style-type: none;display: flex;position:absolute;z-index: -1;top:0;left:0;}
+.licenciatura .portugal-slider-loader l1{width:1px;height:1px;}
+.licenciatura  .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-porto-sm.jpg);}
+.licenciatura  .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-madeira-sm.jpg);}
+.licenciatura  .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
+.licenciatura  .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc-sm.jpg);}
+.licenciatura  .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-guimaraes-sm.jpg);}
+
+/*BG mestrado*/
+@keyframes intro-bg-mestrado {
+    0%   {background-image: url(assets/images/bg-aveiro-sm.jpg);}
+    18%  {background-image: url(assets/images/bg-aveiro-sm.jpg);}
+    20%  {background-image: url(assets/images/bg-evora-sm.jpg);}
+    38%  {background-image: url(assets/images/bg-evora-sm.jpg);}
+    40%  {background-image: url(assets/images/bg-acores-sm.jpg);}
+    58%  {background-image: url(assets/images/bg-acores-sm.jpg);}
+    60%  {background-image: url(assets/images/bg-estrela-sm.jpg);}
+    78%  {background-image: url(assets/images/bg-estrela-sm.jpg);}
+    80%  {background-image: url(assets/images/bg-braga-sm.jpg);}
+    98%  {background-image: url(assets/images/bg-braga-sm.jpg);}
+    100%   {background-image: url(assets/images/bg-aveiro-sm.jpg);}
+}
+/*load the images before the animation do avoid the blink issue*/
+.mestrado .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-aveiro-sm.jpg);}
+.mestrado .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-evora-sm.jpg);}
+.mestrado .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-acores-sm.jpg);}
+.mestrado .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-estrela-sm.jpg);}
+.mestrado .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-braga-sm.jpg);}
+
+
 .title.block{
     font-size: 3em;
     text-align: center;
@@ -331,11 +357,33 @@ h1.logo-universities{
         98%  {background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
         100%   {background-image: url(assets/images/bg-porto.jpg);}
     }
-    .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-porto.jpg);}
-    .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-madeira.jpg);}
-    .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-trasosmontes1.jpg);}
-    .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
-    .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-guimaraes.jpg);}
+    .licenciatura .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-porto.jpg);}
+    .licenciatura .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-madeira.jpg);}
+    .licenciatura .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-trasosmontes1.jpg);}
+    .licenciatura .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-coimbra-biblioteca-joanina-uc.jpg);}
+    .licenciatura .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-guimaraes.jpg);}
+
+    
+    /*BG mestrado*/
+    @keyframes intro-bg-mestrado {
+        0%   {background-image: url(assets/images/bg-aveiro.jpg);}
+        18%   {background-image: url(assets/images/bg-aveiro.jpg);}
+        20%  {background-image: url(assets/images/bg-evora.jpg);}
+        38%  {background-image: url(assets/images/bg-evora.jpg);}
+        40%  {background-image: url(assets/images/bg-acores.jpg);}
+        58%  {background-image: url(assets/images/bg-acores.jpg);}
+        60%  {background-image: url(assets/images/bg-estrela.jpg);}
+        78%  {background-image: url(assets/images/bg-estrela.jpg);}
+        80%  {background-image: url(assets/images/bg-braga.jpg);}
+        98%  {background-image: url(assets/images/bg-braga.jpg);}
+        100%   {background-image: url(assets/images/bg-aveiro.jpg);}
+    }
+    .mestrado .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-aveiro.jpg);}
+    .mestrado .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-evora.jpg);}
+    .mestrado .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-acores.jpg);}
+    .mestrado .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-estrela.jpg);}
+    .mestrado .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-braga.jpg);}
+
 
     .portugal-lifestyle.block{
         background-image:url(assets/images/bg-sea.jpg);
