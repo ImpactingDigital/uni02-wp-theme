@@ -128,6 +128,26 @@ h1.logo-universities{
 .mestrado .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-estrela-sm.jpg);}
 .mestrado .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-braga-sm.jpg);}
 
+/*BG master*/
+@keyframes intro-bg-master {
+    0%   {background-image: url(assets/images/bg-madeira-sm.jpg);}
+    18%  {background-image: url(assets/images/bg-madeira-sm.jpg);}
+    20%  {background-image: url(assets/images/bg-evora-sm.jpg);}
+    38%  {background-image: url(assets/images/bg-evora-sm.jpg);}
+    40%  {background-image: url(assets/images/bg-aveiro-sm.jpg);}
+    58%  {background-image: url(assets/images/bg-aveiro-sm.jpg);}
+    60%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
+    78%  {background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
+    20%  {background-image: url(assets/images/bg-acores-sm.jpg);}
+    38%  {background-image: url(assets/images/bg-acores-sm.jpg);}
+    100% {background-image: url(assets/images/bg-madeira-sm.jpg);}
+}
+.master .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-madeira-sm.jpg);}
+.master .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-evora-sm.jpg);}
+.master .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-acores-sm.jpg);}
+.master .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-aveiro-sm.jpg);}
+.master .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-trasosmontes-sm.jpg);}
+
 
 .title.block{
     font-size: 3em;
@@ -384,7 +404,27 @@ h1.logo-universities{
     .mestrado .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-estrela.jpg);}
     .mestrado .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-braga.jpg);}
 
+    /*BG master*/
+    @keyframes intro-bg-master {
+        0%   {background-image: url(assets/images/bg-madeira.jpg);}
+        18%   {background-image: url(assets/images/bg-madeira.jpg);}
+        20%  {background-image: url(assets/images/bg-evora.jpg);}
+        38%  {background-image: url(assets/images/bg-evora.jpg);}
+        40%  {background-image: url(assets/images/bg-aveiro.jpg);}
+        58%  {background-image: url(assets/images/bg-aveiro.jpg);}
+        60%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
+        78%  {background-image: url(assets/images/bg-trasosmontes1.jpg);}
+        20%  {background-image: url(assets/images/bg-acores.jpg);}
+        38%  {background-image: url(assets/images/bg-acores.jpg);}
+        100% {background-image: url(assets/images/bg-madeira.jpg);}
+    }
+    .master .portugal-slider-loader l1:nth-child(1){background-image: url(assets/images/bg-madeira.jpg);}
+    .master .portugal-slider-loader l1:nth-child(2){background-image: url(assets/images/bg-evora.jpg);}
+    .master .portugal-slider-loader l1:nth-child(3){background-image: url(assets/images/bg-acores.jpg);}
+    .master .portugal-slider-loader l1:nth-child(4){background-image: url(assets/images/bg-aveiro.jpg);}
+    .master .portugal-slider-loader l1:nth-child(5){background-image: url(assets/images/bg-trasosmontes1.jpg);}
 
+    
     .portugal-lifestyle.block{
         background-image:url(assets/images/bg-sea.jpg);
         display:flex;
@@ -615,7 +655,7 @@ footer p{
 }
 .logos-feder{
     background-image: url(assets/images/FEDER.png);
-    width:320px;
+    width:100%;
     height:80px;
     background-size:contain;
     background-repeat: no-repeat;
