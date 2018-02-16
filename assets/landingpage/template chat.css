@@ -50,7 +50,7 @@ input[type="email"]:focus,
 input[type="js-input"]:focus  {
     border:2px solid #F8CC46;
 }
-input[type="button"], button, .button, .choice-button.single{
+input[type="button"], button, .button, .choice-selector-holder .choice-button.single{
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
     width: 100%;

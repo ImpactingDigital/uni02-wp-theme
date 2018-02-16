@@ -50,5 +50,16 @@
 		</div>
 		<!-- #page -->
 		<?php wp_footer(); ?>
+    
+<!--  Script para abertura do chat Smarkio  -->
+    <script>
+    jQuery(document).ready(function( $ ){
+     jQuery('a.open_smk_chat').click(function(e) {
+         e.preventDefault();
+        jQuery('.wrap-p-smk-o div').eq(1).click();
+        jQuery(".--p-smk-fw div").eq(1).click();
+     });
+    });
+    </script>
 	</body>
 	</html>
