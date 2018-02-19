@@ -13,6 +13,7 @@ h1,h2,h3,h4{
     font-family: 'Oswald', sans-serif;
     line-height: 1.2em;
     margin-top:0;
+    margin-bottom:0;
 }
 h2{
     font-size: 2.5em;
@@ -34,9 +35,12 @@ h2.title-chat{
     display:none;
 }
 input[type="text"],
+input[type="number"]
 input[type="email"],
 input[type="tel"],
-input[type="js-input"]{
+input[type="js-input"],
+input.js-input
+{
     width: 100%;
     padding:10px;
     border-radius:25px;
@@ -147,8 +151,9 @@ input[type="button"]:hover, button:hover, .button:hover,
 
 .message.cell p{
     margin:0;
-    padding:5px 20px;
-    font-size: 1.4em;
+    padding:20px 5px 5px 10px;
+    font-size: 1.5em;
+    line-height: 1.2em;
     font-family: 'Oswald', sans-serif;
 }
 .message.cell .from-me{
@@ -237,25 +242,46 @@ input[type="button"]:hover, button:hover, .button:hover,
 }
 #js-datepicker-container{
     left:0;
-    top:40px;
+    max-width:none;
+    width:calc(100% - 20px);
+    margin:10px;
+    border-radius:25px;
+    top:70px;
     border:0;
-    height:calc(100% - 40px);
+    height:calc(100% - 80px);
     margin-top:0;
-    background: -moz-linear-gradient(45deg, rgba(177,208,53,1) 0%, #006032 100%);
-    background: -webkit-linear-gradient(45deg, rgba(177,208,53,1) 0%,#006032 100%);
-    background: linear-gradient(45deg, rgba(177,208,53,1) 0%,#006032 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b1d0', endColorstr='#006032',GradientType=1 );
+    background: #fff;
+    box-sizing: border-box;
 }
 .js-datepicker-btn{
-    background-color:#fff;
+    background: #ef5724;
+    color:#fff;
     border-radius:25px;
     height: 40px;
     line-height: 40px;
     padding: 0 10px;
     margin:4px;
 }
+.js-datepicker-btn-cancel{
+    display: none;
+}
+#js-datepicker-container .ui-datepicker .ui-datepicker-title{
+    margin-top:0;
+}
 .end-message{
     font-size: 1.4em;
     text-align: center;
     padding-top: 20px;
+}
+.from-them .erro{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    color: #ef5724;
+    margin: 10px 20px;
+    padding: 10px;
+    background: #f9e6e0;
+    border-radius: 25px;
+    border: 1px solid #ef5724;
 }
