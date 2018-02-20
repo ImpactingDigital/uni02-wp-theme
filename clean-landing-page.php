@@ -28,6 +28,7 @@
     })(window,document,'script','dataLayer','GTM-M74S53S');</script>
     <!-- End Google Tag Manager -->
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body <?php body_class(); ?>>
 
