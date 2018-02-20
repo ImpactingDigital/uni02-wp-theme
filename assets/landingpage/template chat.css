@@ -35,7 +35,7 @@ h2.title-chat{
     display:none;
 }
 input[type="text"],
-input[type="number"]
+input[type="number"],
 input[type="email"],
 input[type="tel"],
 input[type="js-input"],
@@ -96,6 +96,9 @@ input[type="button"]:hover, button:hover, .button:hover,
 .choice-selector-select-holder{
     padding-left:15px;
     padding-right:15px;
+}
+.choice-selector-holder-inner{
+    padding-bottom:100px;
 }
 .response-selected-choice{
     margin: 0;
@@ -182,7 +185,7 @@ input[type="button"]:hover, button:hover, .button:hover,
     position:absolute;
 }
 .choice-selector-holder{
-    max-height: calc(100% - 60px);
+    max-height: calc(100% - 80px);
 }
 .choice-selector-holder .choice-selector-holder-inner .choice-button{
     font-family: 'Oswald', sans-serif;
@@ -200,14 +203,14 @@ input[type="button"]:hover, button:hover, .button:hover,
 .choice-submit-btn{
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
-    width: 100%;
-    padding:8px;
-    margin:5px 0;
+    width: calc(100% - 20px);
+    position:absolute;
+    bottom:20px;
+    left:22px;
     display: block;
     border-radius:25px;
     border:0;
     color:#fff;
-    padding:5px 15px;
     background: #ef5724;
     background: -moz-linear-gradient(left, #ef5724 0%, #b51f2a 80%);
     background: -webkit-linear-gradient(left, #ef5724 0%,#b51f2a 80%);
